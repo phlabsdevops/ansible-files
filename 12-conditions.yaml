@@ -22,5 +22,4 @@
 
   - name: check roboshop user exists or not
     ansible.builtin.command: id roboshop
-    register: user1
-     msg: "user output is: {{user1}}"
+    register: user #user is a variable name. It stores id roboshop
