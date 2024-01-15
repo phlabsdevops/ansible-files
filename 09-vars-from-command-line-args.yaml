@@ -1,0 +1,7 @@
+#Git bash command line level variables
+- name: variables from Incventory level
+  hosts: localhost
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+     msg: "Hello {{PERSON}}, Good {{WISHES}}"
