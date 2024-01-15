@@ -2,7 +2,7 @@
   hosts: localhost
   become: yes
   tasks: 
-  - name: check roboshop user user exists or not
+  - name: check roboshop user exists or not
     ansible.builtin.command: id roboshop
     register: user #user is a variable name. It stores id roboshop
     ignore_errors: true #ansible will not exit even it got error
@@ -19,3 +19,8 @@
     ansible.builtin.user:
      name: roboshop
     when: user.rc != 0 #condition
+
+  - name: check roboshop user exists or not
+    ansible.builtin.command: id roboshop
+    register: user
+     msg: "user output is: {{user}}"
