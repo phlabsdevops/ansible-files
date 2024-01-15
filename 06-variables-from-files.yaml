@@ -1,4 +1,4 @@
-#Play level variables
+#Another file level variables
 - name: variables from another file level
   hosts: localhost
   vars_files: 

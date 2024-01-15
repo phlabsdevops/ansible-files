@@ -1,4 +1,4 @@
-#Task level variables
+#Prompt level variables
 - name: variables from prompt level
   hosts: localhost
   vars_prompt: 

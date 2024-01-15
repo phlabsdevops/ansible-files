@@ -1,6 +1,14 @@
 192.187.50.20
 192.187.50.21
 
+[localhost]
+localhost
+
+[localhost:vars]
+Course="Realtime Devops with AWS"
+Trainer="Sivakumar"
+Duration="110 hrs"
+
 [web]
 18.206.95.170
 
