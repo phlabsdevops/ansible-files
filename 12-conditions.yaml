@@ -22,5 +22,5 @@
 
   - name: check roboshop user exists or not
     ansible.builtin.command: id roboshop
-    register: user
-     msg: "user output is: {{user}}"
+    register: user1
+     msg: "user output is: {{user1}}"
