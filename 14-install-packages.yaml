@@ -1,0 +1,11 @@
+- name: loops
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.packages:
+     name: "{{item}}" #item is a default keyword
+     state: present
+    loop:
+    - git
+    - mysql
