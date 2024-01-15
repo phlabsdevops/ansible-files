@@ -1,0 +1,11 @@
+- name: Advanced loops
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install or uninstall packages
+    ansible.builtin.package:
+     name: "{{item.name}}" #item is a default keyword
+     state: "{{item.state}}"
+    loop:
+    - {name: 'git', state:'present'}
+    - {name: 'mysql', state:'absent'}
