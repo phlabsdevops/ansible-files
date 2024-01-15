@@ -1,5 +1,5 @@
 #Task level variables
-- name: variables from Play level
+- name: variables from Task level
   hosts: localhost
   vars: 
     Course: Devops

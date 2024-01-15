@@ -1,5 +1,5 @@
 #Play level variables
-- name: variables from Play level
+- name: variables from another file level
   hosts: localhost
   vars_files: 
   - variables.yaml
