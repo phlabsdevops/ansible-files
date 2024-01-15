@@ -1,0 +1,22 @@
+#Git bash command line level variables
+- name: variables from Incventory level
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+  var_prompt:
+   - name: PERSON
+    prompt: Please enter your name
+    private: false #user can see what they are enter
+  - name: WISHES
+    prompt: Please enter your wishes
+    private: false #user can't see what they are enter
+  vars: 
+   PERSON: "Siva from play 1"
+   WISHES: "Morning from Play 1"
+  tasks:
+  - name: check variables
+    vars: 
+     PERSON: "Siva from Task 1"
+     WISHES: "Morning from Task 1"
+    ansible.builtin.debug:
+     msg: "Hello {{PERSON}}, Good {{WISHES}}"
