@@ -10,7 +10,7 @@
     Devops: 7
     Shell: 6
     AWS: 7
-   Trainer: Sivakumar
+   Trainer: true
   tasks:
   - name: print key value pair
     ansible.builtin.debug:
