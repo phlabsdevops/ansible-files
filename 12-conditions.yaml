@@ -20,6 +20,6 @@
      name: roboshop
     when: user.rc != 0 #condition
 
-  - name: check roboshop user exists or not
-    ansible.builtin.command: id roboshop
-    register: user #user is a variable name. It stores id roboshop
+  # - name: check roboshop user exists or not
+  #   ansible.builtin.command: id roboshop
+  #   register: user #user is a variable name. It stores id roboshop
